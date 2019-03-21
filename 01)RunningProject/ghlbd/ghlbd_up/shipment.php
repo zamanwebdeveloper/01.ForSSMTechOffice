@@ -335,12 +335,18 @@ $panme=mysql_fetch_array($res);
   
   <tr class="paging"> 
     <td width="15%" align="right"><strong>Number of pcs</strong></td>
-      <td width="2%"><strong>:</strong></td>
-
+    <td width="2%"><strong>:</strong></td>
     <td ><?php echo $row['pcs'];?></td>
+
     <td width="15%" align="right"><strong>Description</strong></td>
       <td width="2%"><strong>:</strong></td>
-    <td ><?php echo $myrow['descri_cont'];?></td>
+    <td ><?php echo $row['pdescription'];?></td>
+
+    <!--
+    <td width="15%" align="right"><strong>Agent Name</strong></td>
+    <td width="2%"><strong>:</strong></td>
+    <td ><?php echo $row['agentname'];?></td>
+    -->
   </tr>
    <tr class="paging"> 
     <td width="15%" align="right"><strong>Agent A/C No </strong></td>
