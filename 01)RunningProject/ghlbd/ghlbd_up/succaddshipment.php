@@ -28,8 +28,9 @@ $cLocation=$_REQUEST['cLocation'];
 
 $pcs=$_REQUEST['pcs'];
 $weight=$_REQUEST['weight'];
+$pdescription=$_REQUEST['pdescription'];
 
-$res=add_shipment($hawb_no, $origin, $destination, $through, $awb_no, $date, $shipper, $receiver, $prduct, $stutus,$smobile,$semail,$saddress,$rmobile,$remail,$raddress,$edate,$agentname,$refname,$cLocation,$pcs,$weight);
+$res=add_shipment($hawb_no, $origin, $destination, $through, $awb_no, $date, $shipper, $receiver, $prduct, $stutus,$smobile,$semail,$saddress,$rmobile,$remail,$raddress,$edate,$agentname,$refname,$cLocation,$pcs,$weight,$pdescription);
 
 if($res)
 {

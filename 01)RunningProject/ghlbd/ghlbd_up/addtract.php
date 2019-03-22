@@ -205,13 +205,13 @@ require_once('calendar/calendar/classes/tc_calendar.php');
       </select>
       </td>
   </tr>
-  <!--
+  <!---->
   </tr> <tr>
     <td class="p02bold">Product Description</td>
     <td class="p02"><strong>:</strong></td>
     <td height="28" class="tabfontfocus"><textarea name="pdescription" cols="32"></textarea></td>
   </tr>
-  -->
+  
 
   <tr>
     <td class="p02bold">Status</td>

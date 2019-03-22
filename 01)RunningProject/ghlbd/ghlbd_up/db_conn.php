@@ -6,9 +6,9 @@ $password='';
 $con=mysql_connect($hostname,$username,$password) or die("Mysql connection failure.");
 $dbcon=mysql_select_db('shifaintl', $con) or die("Database connection failure");
 
-function add_shipment($hawb_no, $origin, $destination, $through, $awb_no, $date, $shipper, $receiver, $prduct, $stutus,$smobile,$semail,$saddress,$rmobile,$remail,$raddress,$edate,$agentname,$refname,$cLocation,$pcs,$weight)
+function add_shipment($hawb_no, $origin, $destination, $through, $awb_no, $date, $shipper, $receiver, $prduct, $stutus,$smobile,$semail,$saddress,$rmobile,$remail,$raddress,$edate,$agentname,$refname,$cLocation,$pcs,$weight,$pdescription)
 {
-	 $sql="INSERT INTO shipment(`HAWB`, `origin`, `destination`, `media`, `AWB`, `pdate`, `shipper`, `receiver`, `product`, `status` ,`smobile`, `semail`, `saddress`, `rmobile`, `remail`, `raddress`, `edate`, `refname`, `agentname`, `cLocation`, `pcs`, `weight`) VALUES('$hawb_no', '$origin', '$destination', '$through', '$awb_no', '$date', '$shipper', '$receiver', '$prduct', '$stutus','$smobile', '$semail', '$saddress', '$rmobile', '$remail', '$raddress','$edate', '$refname','$agentname','$cLocation', '$pcs','$weight')";
+	 $sql="INSERT INTO shipment(`HAWB`, `origin`, `destination`, `media`, `AWB`, `pdate`, `shipper`, `receiver`, `product`, `status` ,`smobile`, `semail`, `saddress`, `rmobile`, `remail`, `raddress`, `edate`, `refname`, `agentname`, `cLocation`, `pcs`, `weight`, `pdescription`) VALUES('$hawb_no', '$origin', '$destination', '$through', '$awb_no', '$date', '$shipper', '$receiver', '$prduct', '$stutus','$smobile', '$semail', '$saddress', '$rmobile', '$remail', '$raddress','$edate', '$refname','$agentname','$cLocation', '$pcs','$weight','$pdescription')";
 
 	$res=mysql_query($sql) or die(mysql_error());
 	if($res)
